@@ -1,0 +1,28 @@
+
+page{
+  background:#F7F7F7;
+}
+.topimg{
+  width:100vw;
+  height: 200rpx;
+}
+.content{
+  background: white;
+  
+  height: 300rpx;
+  border-radius:  20rpx 20rpx 0 0;
+  position: relative;
+  top:-20rpx;
+}
+.memberimg{
+  width:100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.card{
+  background: #FDFDFD;
+  margin-top:30rpx;
+  height: 400rpx;
+  border:1rpx solid #E1E1E1;
+  border-radius: 20rpx;
+}

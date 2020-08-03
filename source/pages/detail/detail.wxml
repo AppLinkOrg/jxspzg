@@ -1,0 +1,57 @@
+<view class="flex-row flex-center padding-20 topbg">
+	<image src="{{uploadpath}}resource/{{res.topimg}}" class="memberimg"></image>
+	<view class="h5 margin-left-20">马国荣|儿童教育</view>
+	<view class="flex-1"></view>
+	<view class="h5">更多</view>
+</view>
+<view class="content ">
+<view class="padding-30">
+	<view class="flex-row ">
+		<view class="h4">{{typeinfo.name}}</view>
+	</view>
+	<view class="h5 margin-top-10">{{typeinfo.title}}</view>
+	<view class="h5">{{typeinfo.viewnum}}次浏览</view>
+	<view class="bg-white">
+	<view wx:for="{{typeinfo.shanpin}}" wx:for-index="index" class="flex-row  margin-top-20 shanpin">
+		<image src="{{uploadpath}}resource/{{res.topimg}}" class="imgs"></image>
+
+		<view class="margin-left-20 flex-1">
+			<view class="h5">{{item.name}}</view>
+			<view class="chaochu2 h6 margin-top-5">{{item.tiele}}</view>
+
+			<view class="flex-row flex-center margin-top-5">
+				<view>
+					<view class="h6">销量:{{item.sales}}</view>
+					<view class="h5 margin-top-5">￥{{item.price}}</view>
+				</view>
+
+				<view class="flex-1"></view>
+					<image wx:if="{{item.num>0}}" bindtap="jian" data-id="{{index}}" src="{{uploadpath}}resource/{{res.jian}}" class="jia"></image>
+					<view class="margin-left-10 margin-right-10">{{item.num}}</view>
+				<image bindtap="jia"  data-id="{{index}}" src="{{uploadpath}}resource/{{res.jia}}" class="jia"></image>
+
+
+
+			</view>
+		</view>
+
+
+	</view>
+	<view style="height:100rpx"></view>
+	</view>
+</view>
+</view>
+
+<view class="bottom ">
+<view class="flex-row flex-center padding-30 " style="height:90rpx">
+<image wx:if="{{num==0}}" src="{{uploadpath}}resource/{{res.gouwuchenull}}" class="icon-30"></image>
+<image  wx:if="{{num>0}}" src="{{uploadpath}}resource/{{res.gouwuche}}" class="icon-30"></image>
+<view wx:if="{{num>0}}" class="num">{{num}}</view>
+<view wx:if="{{num==0}}">未选购商品</view>
+<view class="margin-left-20" wx:if="{{num>0}}">{{price}}</view>
+<view class="flex-1"></view>
+<view wx:if="{{num==0}}" class="qujiesuan">去结算</view>
+
+<view  wx:if="{{num>0}}" class="jiesuan">去结算</view>
+</view>
+</view>

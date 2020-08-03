@@ -1,0 +1,65 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #4DCAD5;
+}
+.memberimg{
+  width:100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.topbg{
+  background: #4DCAD5;
+}
+.content{
+  border-radius:  20rpx 20rpx 0 0 ;
+z-index: 999;
+background: white;
+}
+.imgs{
+  max-width:200rpx;
+  height: 200rpx;
+}
+.jia{
+  width:40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.shanpin{
+  padding-bottom: 40rpx;
+  border-bottom: 1rpx solid #F2F2F2;
+}
+.bottom{
+  width:100vw;
+  height: 150rpx;
+  position: fixed;
+  bottom: 0;
+  background: #FFFFFF;
+}
+.qujiesuan{
+   width:210rpx;
+   height: 80rpx;
+   line-height: 80rpx;
+   text-align: center;
+   color:white;
+   background: #FFE6CA;
+}
+.jiesuan{
+  width:210rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color:white;
+  background: #FFAA4F;
+}
+.num{
+  position: absolute;
+  margin-top:-20rpx;
+  margin-left:40rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  line-height: 40rpx;
+  text-align: center;
+  color: white;
+  background: red;
+}
