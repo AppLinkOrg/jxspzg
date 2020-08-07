@@ -13,7 +13,7 @@
 	<view class="h5">{{typeinfo.viewnum}}次浏览</view>
 	<view class="bg-white">
 	<view wx:for="{{typeinfo.shanpin}}" wx:for-index="index" class="flex-row  margin-top-20 shanpin">
-		<image src="{{uploadpath}}resource/{{res.topimg}}" class="imgs"></image>
+		<image src="{{uploadpath}}imgs/{{item.imgs[0].img}}" class="imgs"></image>
 
 		<view class="margin-left-20 flex-1">
 			<view class="h5">{{item.name}}</view>
@@ -52,6 +52,6 @@
 <view class="flex-1"></view>
 <view wx:if="{{num==0}}" class="qujiesuan">去结算</view>
 
-<view  wx:if="{{num>0}}" class="jiesuan">去结算</view>
+<view  bindtap="jiesuan" wx:if="{{num>0}}" class="jiesuan">去结算</view>
 </view>
 </view>

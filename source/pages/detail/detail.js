@@ -67,6 +67,13 @@ class Content extends AppBase {
 
      })
   }
+  jiesuan(){
+ 
+  wx.navigateTo({
+    url: '/pages/jiesuan/jiesuan',
+  })
+
+  }
 }
 var content = new Content();
 var body = content.generateBodyJson();
@@ -75,4 +82,5 @@ body.onMyShow = content.onMyShow;
 body.jia=content.jia;
 body.jian=content.jian;
 body.jisuan=content.jisuan;
+body.jiesuan=content.jiesuan;
 Page(body)
